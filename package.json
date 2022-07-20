@@ -1,10 +1,10 @@
 {
-    "version": "1.0.0",
-    "name": "Belima",
+    "version": "1.2.0",
+    "name": "belima",
     "app-name": "Belima",
-    "package-name": "static_app",
+    "package-name": "belima",
     "project-type": "static",
-    "icon": "./assets/icon/icon.png",
+    "icon": "assets/icon/ic.png",
     "dist-path": "./dist",
     "permission": [
         "android.permission.INTERNET"
@@ -13,10 +13,15 @@
     "author": "",
     "license": "ISC",
     "scripts": {
-        "build": "androidjs build"
+        "build": "androidjs build",
+        "force-build": "androidjs build -f",
+        "release-build": "androidjs build -f --release"
     },
     "project-name": "Belima",
     "theme": {
         "fullScreen": true
+    },
+    "dependencies": {
+        "androidjs": "^2.0.4"
     }
 }
