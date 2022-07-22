@@ -1,12 +1,83 @@
 <html>
+
 <head>
-    <script src = "../assets/androidjs.js"></script>
+    <!-- <base href="../assets"> -->
+    <link href="../assets/css/material-icon.css" rel="stylesheet">
+    <script src="../assets/js/androidjs.js"></script>
+    <link type="text/css" rel="stylesheet" href="../assets/css/materialize.min.css" media="screen,projection" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
+
 <body>
-    <h1>Hello from Android JS</h1>
+    <nav class="nav-extended cyan">
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo">Belima</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a class="waves-effect" href="#"><i class="material-icons">info</i></a></li>
+                <li><a class="waves-effect" href="#"><i class="material-icons">account_circle</i></a></li>
+                <li><a class="waves-effect" href="#"><i class="material-icons">settings</i></a></li>
+            </ul>
+        </div>
+        <div class="nav-content">
+            <ul id="main-tabs-swipe" class="tabs tabs-transparent">
+                <li class="tab"><a class="waves-effect" href="#overview">Overview</a></li>
+                <li class="tab"><a class="waves-effect active" href="#todo">To Do</a></li>
+                <li class="tab"><a class="waves-effect" href="#learn-planning">Learn Planning</a></li>
+                <li class="tab"><a class="waves-effect" href="#life-cycle">Life Cycle</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+        <li>
+            <div class="user-view">
+                <div class="background">
+                    <img src="../assets/image/bg1.jpg">
+                </div>
+                <a href="#user"><img class="circle" src="../assets/image/blank-profile.png"></a>
+                <a href="#name"><span class="white-text name">Seyed Mehdi</span></a>
+                <a href="#email"><span class="white-text email">SeyedMahdiHosseini32@gmail.com</span></a>
+            </div>
+        </li>
+        <li><a class="waves-effect" href="#"><i class="material-icons">account_circle</i> Profile</a></li>
+        <li><a class="waves-effect" href="#"><i class="material-icons">settings</i> Settings</a></li>
+        <li><a class="waves-effect" href="#"><i class="material-icons">info</i> About Me</a></li>
+    </ul>
+
+
+    <!-- Container -->
+    <div class="container">
+        <br>
+        <div id="overview" class="col s12">Test 3</div>
+        <div id="todo" class="col s12">
+            <div class="input-field col s6">
+                <input id="test_input" type="text" class="validate">
+                <label for="first_name">Test Input For Save</label>
+            </div>
+            <button class="btn waves-effect waves-light" type="submit" name="action"
+                onclick="test_local_storage()">Save
+                <i class="material-icons right">send</i>
+            </button>
+            <br><br>
+            <div class="input-field col s6">
+                <input id="test_input_for_load" type="text" class="validate" readonly>
+                <label for="first_name">Test Input For Load</label>
+            </div>
+        </div>
+        <div id="learn-planning" class="col s12">Test 2</div>
+        <div id="life-cycle" class="col s12">Test 4</div>
+    </div>
+
+    <div class="fixed-action-btn">
+        <a class="btn-floating waves-effect btn-large green">
+            <i class="large material-icons">add</i>
+        </a>
+    </div>
+
+
+    <script type="text/javascript" src="../assets/js/materialize.min.js"></script>
+    <script type="text/javascript" src="../assets/js/app.js"></script>
 </body>
-<script>
-    console.log(app);
-    app.toast.show("nice it is working fine")
-</script>
+
 </html>

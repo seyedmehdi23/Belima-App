@@ -13,13 +13,15 @@
     "author": "",
     "license": "ISC",
     "scripts": {
-        "build": "androidjs build",
-        "force-build": "androidjs build -f",
+        "build": "androidjs build -f",
         "release-build": "androidjs build -f --release"
     },
     "project-name": "Belima",
     "theme": {
-        "fullScreen": true
+        "fullScreen": true,
+        "colorAccent": "#FF0000",
+        "colorPrimary": "#00bcd4",
+        "colorPrimaryDark": "#00bcd4"
     },
     "dependencies": {
         "androidjs": "^2.0.4"
